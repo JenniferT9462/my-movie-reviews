@@ -1,0 +1,11 @@
+
+
+body {
+    background-image: url('assets/movie-bg.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100vh;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
