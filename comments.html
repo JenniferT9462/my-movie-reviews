@@ -17,10 +17,10 @@
     ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body onload="renderUserName()">
     <nav class="navbar navbar-expand-lg bg-danger navbar-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">My Movie Reviews</a>
+        <a id="userNameNavBar" class="navbar-brand" href="#" >Welcome</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -115,5 +115,7 @@
     <footer class="text-center text-light bg-danger p-1">
         <p>&copy; 2025 Created @ CodeX</p>
     </footer>
+
+    <script src="app.js"></script>
   </body>
 </html>

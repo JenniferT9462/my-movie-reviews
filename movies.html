@@ -17,10 +17,10 @@
     ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body onload="renderUserName()">
     <nav class="navbar navbar-expand-lg bg-danger navbar-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">My Movie Reviews</a>
+        <a id="userNameNavBar" class="navbar-brand" href="#" >Welcome</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -53,191 +53,17 @@
     <h1 class="text-center text-light display-4 my-4">Movies</h1>
 
     <div class="container">
-      <div class="row">
-        <!-- Card 1 -->
-        <div class="col-lg-6">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="assets/zootopia2.webp"
-                  class="img-fluid rounded-start object-fit-cover h-100"
-                  alt="Zootopia 2"
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Zootopia 2</h5>
-                  <p class="card-text">
-                    After cracking the biggest case in Zootopia's history,
-                    rookie cops Judy Hopps and Nick Wilde find themselves on the
-                    twisting trail of a great mystery when Gary De’Snake arrives
-                    and turns the animal metropolis upside down. To crack the
-                    case, Judy and Nick must go undercover to unexpected new
-                    parts of town, where their growing partnership is tested
-                    like never before.
-                  </p>
+      <div id="movieReport" class="row">
+        
 
-                  <a class="btn btn-danger" href="comments.html"
-                    >Leave a Review</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="col-lg-6">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="assets/tron.webp"
-                  class="img-fluid rounded-start object-fit-cover h-100"
-                  alt="Tron movie poster"
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Tron</h5>
-                  <p class="card-text">
-                    A highly sophisticated Program called Ares is sent from the
-                    digital world into the real world on a dangerous mission,
-                    marking humankind's first encounter with A.I. beings.
-                  </p>
-
-                  <a class="btn btn-danger" href="comments.html"
-                    >Leave a Review</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="col-lg-6">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="assets/predator.webp"
-                  class="img-fluid rounded-start object-fit-cover h-100"
-                  alt="Predator movie poster"
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Predator: Badlands</h5>
-                  <p class="card-text">
-                    Cast out from his clan, a young Predator finds an unlikely
-                    ally in a damaged android and embarks on a treacherous
-                    journey in search of the ultimate adversary.
-                  </p>
-
-                  <a class="btn btn-danger" href="comments.html"
-                    >Leave a Review</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="col-lg-6">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="assets/wicked2.webp"
-                  class="img-fluid rounded-start object-fit-cover h-100"
-                  alt="Wicked 2 movie poster"
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Wicked For Good</h5>
-                  <p class="card-text">
-                    As an angry mob rises against the Wicked Witch, Glinda and
-                    Elphaba will need to come together one final time. With
-                    their singular friendship now the fulcrum of their futures,
-                    they will need to truly see each other, with honesty and
-                    empathy, if they are to change themselves, and all of Oz,
-                    for good.
-                  </p>
-
-                  <a class="btn btn-danger" href="comments.html"
-                    >Leave a Review</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="col-lg-6">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="assets/frankestien.webp"
-                  class="img-fluid rounded-start object-fit-cover h-100"
-                  alt="Frankenstein movie poster"
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Frankenstein</h5>
-                  <p class="card-text">
-                    Dr. Victor Frankenstein, a brilliant but egotistical
-                    scientist, brings a creature to life in a monstrous
-                    experiment that ultimately leads to the undoing of both the
-                    creator and his tragic creation.
-                  </p>
-
-                  <a class="btn btn-danger" href="comments.html"
-                    >Leave a Review</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 6 -->
-        <div class="col-lg-6">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="assets/war-of-the-worlds.webp" class="img-fluid rounded-start object-fit-cover h-100" alt="War of the Worlds movie poster" />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">War of the Worlds</h5>
-                  <p class="card-text">
-                    Will Radford is a top analyst for Homeland Security who
-                    tracks potential threats through a mass surveillance
-                    program, until one day an attack by an unknown entity leads
-                    him to question whether the government is hiding something
-                    from him... and from the rest of the world.
-                  </p>
-
-                  <a class="btn btn-danger" href="comments.html"
-                    >Leave a Review</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
 
     <footer class="text-center text-light bg-danger p-2">
         <p>&copy; 2025 Created @ CodeX</p>
     </footer>
+
+    <script src="app.js"></script>
   </body>
 </html>
