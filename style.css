@@ -1,7 +1,7 @@
 
 
 body {
-    background-image: url('assets/movie-bg.avif');
+    background-image: url('https://bdygoubdkehbckhaomol.supabase.co/storage/v1/object/public/images-frlopez/movie-bg.avif');
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 100vh;
